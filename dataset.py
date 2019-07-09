@@ -87,8 +87,8 @@ class THUMOSDataset(data.Dataset):
                     self.sampels.append(tmp_results)
 
     def _getVideoFeature(self, videoname, subset):
-        appearance_path = '/home/litao/THUMOS14_ANET_feature/{}_appearance/'.format(subset)
-        denseflow_path = '/home/litao/THUMOS14_ANET_feature/{}_denseflow/'.format(subset)
+        appearance_path = '~/THUMOS14_ANET_feature/{}_appearance/'.format(subset)
+        denseflow_path = '~/THUMOS14_ANET_feature/{}_denseflow/'.format(subset)
         rgb_feature = np.load(appearance_path + videoname + '.npy')
         flow_feature = np.load(denseflow_path + videoname + '.npy')
 
@@ -164,8 +164,8 @@ class THUMOSInferenceDataset(data.Dataset):
                 self.sampels.append(tmp_results)
 
     def _getVideoFeature(self, videoname, subset):
-        appearance_path = '/home/litao/THUMOS14_ANET_feature/{}_appearance/'.format(subset)
-        denseflow_path = '/home/litao/THUMOS14_ANET_feature/{}_denseflow/'.format(subset)
+        appearance_path = '~/THUMOS14_ANET_feature/{}_appearance/'.format(subset)
+        denseflow_path = '~/THUMOS14_ANET_feature/{}_denseflow/'.format(subset)
         rgb_feature = np.load(appearance_path + videoname + '.npy')
         flow_feature = np.load(denseflow_path + videoname + '.npy')
 
