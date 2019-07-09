@@ -6,7 +6,7 @@ class Config(object):
     def __init__(self):
         self.name = "SSAD"
         self.seed = 5
-        self.feature_path = "/home/litao/THUMOS14_ANET_feature/"
+        self.feature_path = "~/THUMOS14_ANET_feature/"
         self.unit_size = 5
         self.feature_dim = 3072
         self.ioa_ratio_threshold = 0.9
